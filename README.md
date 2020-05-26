@@ -1,6 +1,21 @@
 # adaptation
 
+- [adaptation](#adaptation)
+  - [Screenshot](#screenshot)
+  - [import](#import)
+  - [English](#english)
+    - [Usage](#usage)
+    - [Description](#description)
+    - [Personal views on screen adaptation](#personal-views-on-screen-adaptation)
+  - [中文](#中文)
+    - [使用](#使用)
+    - [说明](#说明)
+    - [个人关于屏幕适配的观点](#个人关于屏幕适配的观点)
+  - [LICENSE](#license)
+
 ## Screenshot
+
+<img src='https://cdn.jsdelivr.net/gh/kikt-blog/test_images/Kapture%202020-05-26%20at%2014.07.10.gif' width=350/>
 
 ## import
 
@@ -30,6 +45,8 @@ return MaterialApp(
   },
 );
 ```
+
+Then the code can use all the values of the design page.
 
 ### Description
 
@@ -70,6 +87,8 @@ return MaterialApp(
   },
 );
 ```
+
+接着代码里全部使用设计图的数值即可
 
 ### 说明
 
