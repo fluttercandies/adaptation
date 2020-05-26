@@ -24,17 +24,10 @@ class _AdaptationState extends State<Adaptation> {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, box) {
-        print('box = $box');
         final data = MediaQueryData.fromWindow(ui.window);
         final scale = data.size.width / designWidth;
         final childTargetHeight = data.size.height / scale;
-
         final childSize = Size(designWidth, childTargetHeight);
-
-        print('scale = $scale');
-        print('src size = ${data.size}');
-        print('dst size = $childSize');
-
         final w = Directionality(
           textDirection: TextDirection.ltr,
           child: Center(
