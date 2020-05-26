@@ -19,6 +19,8 @@
 
 ## import
 
+[![pub package](https://img.shields.io/pub/v/adaptation.svg)](https://pub.dartlang.org/packages/adaptation)
+
 ```yaml
 dependencies:
   adaptation: any

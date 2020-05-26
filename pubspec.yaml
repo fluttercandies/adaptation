@@ -1,6 +1,6 @@
 name: adaptation
-description: A new Flutter package project.
-version: 0.1.0
+description: A flutter adaptation library that is enlarged / reduced in proportion to the width of the design drawing.
+version: 0.1.1
 homepage: https://github.com/fluttercandies/adaptation
 
 environment:
