@@ -31,12 +31,11 @@ class _AdaptationState extends State<Adaptation> {
         final w = Directionality(
           textDirection: TextDirection.ltr,
           child: Center(
-            child: Transform.scale(
-              scale: scale,
-              child: OverflowBox(
-                maxWidth: childSize.width,
-                maxHeight: childSize.height,
-                // size: childSize,
+            child: OverflowBox(
+              maxWidth: childSize.width,
+              maxHeight: childSize.height,
+              child: Transform.scale(
+                scale: scale,
                 child: widget.child,
               ),
             ),

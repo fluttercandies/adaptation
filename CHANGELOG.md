@@ -1,3 +1,9 @@
+## 0.1.3
+
+Fix bug:
+
+- Some area can't handle gesture.
+
 ## 0.1.2
 
 Remove develop log.
