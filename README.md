@@ -17,6 +17,8 @@
 
 <img src='https://cdn.jsdelivr.net/gh/kikt-blog/test_images/Kapture%202020-05-26%20at%2014.07.10.gif' width=350/>
 
+If you can't see the image from github, [access it](https://cdn.jsdelivr.net/gh/kikt-blog/test_images/Kapture%202020-05-26%20at%2014.07.10.gif)
+
 ## import
 
 [![pub package](https://img.shields.io/pub/v/adaptation.svg)](https://pub.dartlang.org/packages/adaptation)
