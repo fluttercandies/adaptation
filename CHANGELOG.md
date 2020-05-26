@@ -1,3 +1,7 @@
+## 0.1.2
+
+Remove develop log.
+
 ## 0.1.1
 
 Update readme and description.
