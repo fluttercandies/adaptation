@@ -4,12 +4,12 @@ import 'package:flutter/widgets.dart';
 import 'dart:ui' as ui;
 
 class Adaptation extends StatefulWidget {
-  final Widget child;
+  final Widget? child;
   final double designWidth;
 
   const Adaptation({
-    Key key,
-    @required this.child,
+    Key? key,
+    this.child,
     this.designWidth = 375,
   }) : super(key: key);
 
