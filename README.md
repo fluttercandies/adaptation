@@ -25,7 +25,7 @@ If you can't see the image from github, [access it](https://cdn.jsdelivr.net/gh/
 
 ```yaml
 dependencies:
-  adaptation: any
+  adaptation: ^0.2.0-nullsafety # nullsafety version
 ```
 
 ## English
