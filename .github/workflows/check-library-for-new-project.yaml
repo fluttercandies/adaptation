@@ -4,7 +4,7 @@ on:
   pull_request:
 jobs:
   build-on-android-3-7-0:
-    name: Build flutter for android on ubuntu-latest with 3.7.0
+    name: Build for android with 3.7.0 on ubuntu-latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -30,7 +30,7 @@ jobs:
         working-directory: ${{ github.workspace }}/new_project
         name: Build example
   build-on-android-3-10-6:
-    name: Build flutter for android on ubuntu-latest with 3.10.6
+    name: Build for android with 3.10.6 on ubuntu-latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -56,7 +56,7 @@ jobs:
         working-directory: ${{ github.workspace }}/new_project
         name: Build example
   build-on-ios-3-7-0:
-    name: Build flutter for ios on macos-latest with 3.7.0
+    name: Build for ios with 3.7.0 on macos-latest
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
@@ -78,7 +78,7 @@ jobs:
         working-directory: ${{ github.workspace }}/new_project
         name: Build example
   build-on-ios-3-10-6:
-    name: Build flutter for ios on macos-latest with 3.10.6
+    name: Build for ios with 3.10.6 on macos-latest
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
@@ -100,7 +100,7 @@ jobs:
         working-directory: ${{ github.workspace }}/new_project
         name: Build example
   build-on-web-3-7-0:
-    name: Build flutter for web on ubuntu-latest with 3.7.0
+    name: Build for web with 3.7.0 on ubuntu-latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -122,7 +122,7 @@ jobs:
         working-directory: ${{ github.workspace }}/new_project
         name: Build example
   build-on-web-3-10-6:
-    name: Build flutter for web on ubuntu-latest with 3.10.6
+    name: Build for web with 3.10.6 on ubuntu-latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -144,14 +144,14 @@ jobs:
         working-directory: ${{ github.workspace }}/new_project
         name: Build example
   build-on-linux-3-7-0:
-    name: Build flutter for linux on ubuntu-latest with 3.7.0
+    name: Build for linux with 3.7.0 on ubuntu-latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install CMake
-        uses: jwlawson/actions-setup-cmake@v1.13
+      - name: Setup Ninja
+        uses: ashutoshvarma/setup-ninja@master
         with:
-          cmake-version: '3.27.1'
+          version: 1.10.0
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: 3.7.0
@@ -170,14 +170,14 @@ jobs:
         working-directory: ${{ github.workspace }}/new_project
         name: Build example
   build-on-linux-3-10-6:
-    name: Build flutter for linux on ubuntu-latest with 3.10.6
+    name: Build for linux with 3.10.6 on ubuntu-latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install CMake
-        uses: jwlawson/actions-setup-cmake@v1.13
+      - name: Setup Ninja
+        uses: ashutoshvarma/setup-ninja@master
         with:
-          cmake-version: '3.27.1'
+          version: 1.10.0
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: 3.10.6
@@ -196,7 +196,7 @@ jobs:
         working-directory: ${{ github.workspace }}/new_project
         name: Build example
   build-on-macos-3-7-0:
-    name: Build flutter for macos on macos-latest with 3.7.0
+    name: Build for macos with 3.7.0 on macos-latest
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
@@ -218,7 +218,7 @@ jobs:
         working-directory: ${{ github.workspace }}/new_project
         name: Build example
   build-on-macos-3-10-6:
-    name: Build flutter for macos on macos-latest with 3.10.6
+    name: Build for macos with 3.10.6 on macos-latest
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
@@ -240,7 +240,7 @@ jobs:
         working-directory: ${{ github.workspace }}/new_project
         name: Build example
   build-on-windows-3-7-0:
-    name: Build flutter for windows on windows-latest with 3.7.0
+    name: Build for windows with 3.7.0 on windows-latest
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
@@ -254,7 +254,7 @@ jobs:
       - run: flutter create new_project --platforms=windows
         name: Create new project
       - name: Add adaptation to new project.
-        run: flutter pub add -- 'adaptation:{"path":"../"}'
+        run: flutter pub add -- 'adaptation:{"path":"..\\"}'
         working-directory: ${{ github.workspace }}/new_project
       - run: flutter pub get
         working-directory: ${{ github.workspace }}/new_project
@@ -262,7 +262,7 @@ jobs:
         working-directory: ${{ github.workspace }}/new_project
         name: Build example
   build-on-windows-3-10-6:
-    name: Build flutter for windows on windows-latest with 3.10.6
+    name: Build for windows with 3.10.6 on windows-latest
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
@@ -276,7 +276,7 @@ jobs:
       - run: flutter create new_project --platforms=windows
         name: Create new project
       - name: Add adaptation to new project.
-        run: flutter pub add -- 'adaptation:{"path":"../"}'
+        run: flutter pub add -- 'adaptation:{"path":"..\\"}'
         working-directory: ${{ github.workspace }}/new_project
       - run: flutter pub get
         working-directory: ${{ github.workspace }}/new_project
